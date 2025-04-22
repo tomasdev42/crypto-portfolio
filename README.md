@@ -31,8 +31,10 @@ Implement necessary caching mechanism in the api to reduce coingecho api loads
 
 1. Install dependencies:
 
-- cd cryptoportfolio
-- npm install
+- Navigate to /api directory and run:
+npm install
+- Navigate to /client directory and run:
+npm install
 
 2. Set up environment variables (create a .env file in the root directory)
 
