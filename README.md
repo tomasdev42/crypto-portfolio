@@ -23,7 +23,7 @@ Implement necessary caching mechanism in the api to reduce coingecho api loads
 
 ### Prerequisites
 
-- Node.js (v14+ recommended)
+- Node.js (v22 recommended)
 - MongoDB
 - npm or yarn
 
@@ -42,7 +42,7 @@ npm install
 
 - VITE_API_BASE_URL = URL of Backend API
 
-#### Backend (.env file in /server directory)
+#### Backend (.env file in /api directory)
 
 - MONGO_URI= MongoDB URI Connection String
 - JWT_ACCESS_SECRET= Your Access Token Secret

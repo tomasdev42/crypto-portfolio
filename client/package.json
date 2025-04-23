@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "crypto-portfolio-client",
   "private": true,
   "version": "0.0.0",
   "proxy": "http://localhost:8000",
