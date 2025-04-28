@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import { createServer } from "node:http";
 import { Server as SocketIOServer } from "socket.io";
 import express, { Express } from "express";
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import passport from "passport";
 import mongoose from "mongoose";
@@ -9,7 +10,7 @@ import authRouter from "./routes/auth";
 import portfolioRouter from "./routes/portfolio";
 import dataRouter from "./routes/data";
 import uploadRouter from "./routes/upload";
-import { setupCronJob } from "./utils/portfolioUpdater"
+import { setupCronJob } from "./utils/portfolioUpdater";
 import path from "path";
 
 dotenv.config();
@@ -37,6 +38,7 @@ mongoose
 
 // middleware
 app.use(express.json());
+app.use(cookieParser());
 app.use(
   cors({
     origin: [ORIGIN_URL],
